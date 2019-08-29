@@ -8,7 +8,7 @@
 # This script will write PDB HETATM lines from the RAMD results. and
 # creats a PDB structure 
 # From the results text file, it extracts the specific coordinate 
-# coloms and convert it to float values
+# columns and convert it to float values
 # Also you can get the file from user input
 
 #####
