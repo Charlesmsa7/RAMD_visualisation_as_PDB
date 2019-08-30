@@ -14,9 +14,10 @@ for d in */ ; do
 	echo "${dir_fname}"
 # Execution of the python_script from the parent folder(master program-no copies)
 	python3 /home/user01/Charles/Program/write_pdb.py
-	cat Direction.pdb >> ../temp.pdb
+	cp ../temp.pdb ../temp1.pdb	
+	cat Direction.pdb >> ../temp1.pdb
 	touch "$dir_fname"_.pdb
-	mv ../temp.pdb ../"$dir_fname"_.pdb
+	mv ../temp1.pdb ../"$dir_fname"_.pdb
 	rm Direction.txt
 	rm Direction.pdb
 	#rm write_pdb.py
